@@ -1,0 +1,17 @@
+http://localhost:8080/api/
+
+###
+http://localhost:8080/api/1
+
+###
+POST http://localhost:8080/api/ HTTP/1.1
+content-type: application/json
+
+{
+    "id": 4,
+    "name": "Scooter",
+    "description": "Winter Scooter"
+  }
+
+###
+DELETE http://localhost:8080/api/4

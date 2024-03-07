@@ -1,0 +1,23 @@
+## Get the available contexts
+
+kubectl config get-contexts
+
+## Set the current contexts to docker-desktop
+
+kubectl config use-context docker-desktop
+
+## Create the Pod
+
+kubectl apply -f productservice-pod.yaml
+
+## Do port forward
+
+Kubectl port-forward product-pod 8080:8080
+
+## Destroy the Pod
+
+kubectl delete -f productservice-pod.yaml
+
+## List all pods in all namespace
+
+kubectl get po -A
