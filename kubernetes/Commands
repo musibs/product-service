@@ -21,3 +21,11 @@ kubectl delete -f productservice-pod.yaml
 ## List all pods in all namespace
 
 kubectl get po -A
+
+## Create a service
+
+kubectl apply -f productservice-service.yaml
+
+## Tunnel the traffic to a service
+
+kubectl port-forward service/product-service 7080:8080
